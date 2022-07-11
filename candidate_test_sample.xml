@@ -1,0 +1,114 @@
+<root>
+  <Invoices>
+    <Invoice>1<TotalValue>240.00</TotalValue></Invoice>
+    <Invoice>5<TotalValue>625.80</TotalValue></Invoice>
+    <Invoice>2<TotalValue>1926.00</TotalValue></Invoice>
+    <Invoice>3<TotalValue>3002.00</TotalValue></Invoice>
+    <Invoice>4<TotalValue>1225.50</TotalValue></Invoice>
+  </Invoices>
+  <Orders>
+    <Order>K35148<TotalLines>1</TotalLines></Order>
+    <Order>K32154<TotalLines>1</TotalLines></Order>
+    <Order>K35149<TotalLines>1</TotalLines></Order>
+    <Order>K32155<TotalLines>1</TotalLines></Order>
+    <Order>K32158<TotalLines>2</TotalLines></Order>
+    <Order>K32160<TotalLines>1</TotalLines></Order>
+  </Orders>
+  <OrderLineNos>
+    <OrderLineNo>1</OrderLineNo>
+    <OrderLineNo>1</OrderLineNo>
+    <OrderLineNo>1</OrderLineNo>
+    <OrderLineNo>1</OrderLineNo>
+    <OrderLineNo>1</OrderLineNo>
+    <OrderLineNo>2</OrderLineNo>
+    <OrderLineNo>1</OrderLineNo>
+  </OrderLineNos>
+  <Customers>
+    <CustomerInfo CustomerName="Snack Stores Ltd">
+      <Address1>38 Barnard Road</Address1>
+      <Address2></Address2>
+      <City>Norwich</City>
+      <Postcode>NR59JP</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="Super ¢ Shop">
+      <Address1>2 Ottergemsesteenweg</Address1>
+      <Address2></Address2>
+      <City>Gent</City>
+      <Postcode>9000</Postcode>
+      <Country>Belgium</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="Tuck Stop">
+      <Address1>1 Bury Rd</Address1>
+      <Address2>Stowmarket</Address2>
+      <City>Stowmarket</City>
+      <Postcode>IP141JF</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="Food Warehouse">
+      <Address1>21 Launceston Retail Park</Address1>
+      <Address2>Hurdon</Address2>
+      <City>Launceston</City>
+      <Postcode>PL15 9DJ</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="The Olde Pub">
+      <Address1>12 Saxondrive</Address1>
+      <Address2></Address2>
+      <City>Tamworth</City>
+      <Postcode> B79 7HY</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+  </Customers>
+  <Products>
+    <ProductInfo ProductCode="FG002580">
+      <Quantity>10</Quantity>
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>12.50</Unitcost>
+      <Totalcost>125.00</Totalcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG003058">
+      <Quantity>28</Quantity>
+      <UnitofMeasurement>KG</UnitofMeasurement>
+      <Unitcost>22.35</Unitcost>
+      <Totalcost>625.80</Totalcost>
+      <currency>EUR</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG002458">
+      <Quantity>10</Quantity>
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>11.50</Unitcost>
+      <Totalcost>115.00</Totalcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG002215">
+      <Quantity>180</Quantity>
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>10.70</Unitcost>
+      <Totalcost>1926.00</Totalcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG001008">
+      <Quantity>100</Quantity>
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>13.00</Unitcost>
+      <Totalcost>1300.00</Totalcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG001009">
+      <Quantity>115</Quantity>
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>14.80</Unitcost>
+      <Totalcost>1702.00</Totalcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG001254">
+      <Quantity>95</Quantity>
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>12.90</Unitcost>
+      <Totalcost>1225.50</Totalcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+  </Products>
+</root>

@@ -1,0 +1,8 @@
+Invoice No,Order No,Order Line No, Customer Name, Address 1,Address 2,City, Postcode,Country,Product Code,Quantity,Unit of Measurement,Unit cost,Total cost,currency
+00001,K35148,1,Snack Stores Ltd,38 Barnard Road,,Norwich,NR59JP,UK,FG002580,10,Each,12.50,125.00,GBP
+00005,K32154,1,Super ¢ Shop,2 Ottergemsesteenweg,,Gent,9000,Belgium,FG003058,28,KG,22.35,625.80,EUR
+00001,K35149,1,Snack Stores Ltd,38 Barnard Road,,Norwich,NR59JP,UK,FG002458,10,Each,11.50,115.00,GBP
+00002,K32155,1,Tuck Stop,1 Bury Rd,Stowmarket,Stowmarket,IP141JF,UK,FG002215,180,,10.70,1926.00,GBP
+00003,K32158,1,Food Warehouse,21 Launceston Retail Park,Hurdon,Launceston,PL15 9DJ,UK,FG001008,100,Each,13.00,1300.00,
+00003,K32158,2,Food Warehouse,21 Launceston Retail Park,Hurdon,Launceston,PL15 9DJ,UK,FG001009,115,Each,14.80,1702.00,
+00004,K32160,1,The Olde Pub,12 Saxondrive,,Tamworth, B79 7HY,UK,FG001254,95,,12.90,1225.50,GBP
