@@ -29,6 +29,9 @@ namespace Code_assessment
 
             foreach (var header in headers)
             {
+                IEnumerable<string> ColumnData = from columnData in csv_dt.AsEnumerable()
+                                                 select columnData.Field<string>(header);
+
                 switch (header)
                 {
                     case "Invoice No":
@@ -42,12 +45,10 @@ namespace Code_assessment
                             break;
                         }
 
-                        IEnumerable<string> ColumnData = from columnData in csv_dt.AsEnumerable()
-                                                         select columnData.Field<string>("Invoice No");
 
                         ColumnData = ColumnData.Distinct();
 
-                        XElement parentNode = new XElement("Invoices");
+                        XElement parentInvoiceNode = new XElement("Invoices");
                         foreach (var invoiceValue in ColumnData)
                         {
                             var InvoicesData = from myrow in csv_dt.AsEnumerable()
@@ -91,9 +92,9 @@ namespace Code_assessment
                                 orderParentNode.Add(orderNode);
                             }
                             invoiceNode.Add(orderParentNode);
-                            parentNode.Add(invoiceNode);
+                            parentInvoiceNode.Add(invoiceNode);
                         }
-                        customerXml.Add(parentNode);
+                        customerXml.Add(parentInvoiceNode);
                         break;
 
                     case "Customer Name":
@@ -114,7 +115,7 @@ namespace Code_assessment
                           let rowData = row
                           select new XElement("CustomerInfo",
                                   new XAttribute("CustomerName", rowData[0]),
-                                  new XElement("InvoiceNo",Convert.ToInt32(rowData[1])),
+                                  new XElement("InvoiceNo", Convert.ToInt32(rowData[1])),
                                   new XElement("Address1", rowData[2]),
                                   new XElement("Address2", rowData[3]),
                                   new XElement("City", rowData[4]),
@@ -147,6 +148,17 @@ namespace Code_assessment
                                   )
                           );
                         customerXml.Add(productInfo);
+                        break;
+
+                    default:
+
+                        XElement parentNode = new XElement(XmlGenerator.ReplaceWord(header.Replace(" ", "")));
+                        foreach (var itemValue in ColumnData)
+                        {
+                            parentNode.Add(new XElement(header.Replace(" ", ""), header == "Unit of Measurement" && itemValue == string.Empty ? "Each" :
+                                                            header == "currency" && itemValue == string.Empty ? "GBP" : itemValue));
+                        }
+                        customerXml.Add(parentNode);
                         break;
                 }
             }

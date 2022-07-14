@@ -135,7 +135,7 @@ namespace Code_assessment
         /// </summary>
         /// <param name="header"> header string contains the header name, which is a parent node name in xml tag</param>
         /// <returns> Returns a modified header value of type string</returns>
-        public string ReplaceWord(string header)
+        public static string ReplaceWord(string header)
         {
             string headerValue;
             if (header.EndsWith("y"))

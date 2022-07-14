@@ -56,6 +56,7 @@ catch (Exception ex)
     Console.WriteLine("Error in Converting File to XML");                                       
     using (StreamWriter sw = File.CreateText(@fileInfo.FullName.Replace(".csv", "logs.txt")))   
     {
+        sw.WriteLine(ex.StackTrace);
         sw.WriteLine(DateTime.Now + ": " + ex.Message);
     }
 }

@@ -1,1 +1,7 @@
-14/07/2022 13:22:49: Duplicate attribute.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Code_assessment.XmlCreator.<>c.<ConvertCsvToXml>b__0_8(String k) in D:\Practice\Code_assessment\Code_assessment\XmlCreator.cs:line 67
+   at System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 selector)
+   at Code_assessment.XmlCreator.ConvertCsvToXml(DataTable csv_dt) in D:\Practice\Code_assessment\Code_assessment\XmlCreator.cs:line 65
+   at Program.<Main>$(String[] args) in D:\Practice\Code_assessment\Code_assessment\Program.cs:line 42
+14/07/2022 13:58:58: Input string was not in a correct format.

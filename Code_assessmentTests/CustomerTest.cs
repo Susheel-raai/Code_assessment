@@ -35,31 +35,25 @@ namespace Code_assessmentTests
         {
             string header = "Currency";
 
-            var actualResult = new XmlGenerator();
-
-            Assert.NotNull(actualResult.ReplaceWord(header));
+            Assert.NotNull(XmlGenerator.ReplaceWord(header));
         }
 
         [Fact]
         public void ReplaceWordExpectedOutputTest1()
         {
             string header = "Currency";
-
-            var actualResult = new XmlGenerator();
             var expectedResult = "Currencies";
 
-            Assert.Equal(expectedResult, actualResult.ReplaceWord(header));
+            Assert.Equal(expectedResult, XmlGenerator.ReplaceWord(header));
         }
 
         [Fact]
         public void ReplaceWordExpectedOutputTest2()
         {
             string header = "Invoice";
-
-            var actualResult = new XmlGenerator();
             var expectedResult = "Invoices";
 
-            Assert.Equal(expectedResult, actualResult.ReplaceWord(header));
+            Assert.Equal(expectedResult, XmlGenerator.ReplaceWord(header));
         }
 
         [Fact]
