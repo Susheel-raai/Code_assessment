@@ -1,0 +1,173 @@
+<root>
+  <Invoices>
+    <Invoice InvoiceNo="1">
+      <TotalValue>240.00</TotalValue>
+      <Orders>
+        <Order OrderNo="K35148">
+          <TotalLines>1</TotalLines>
+          <OrderLines>
+            <OrderLine OrderLineNo="1">
+              <ProductCode>FG002580</ProductCode>
+              <Quantity>10</Quantity>
+              <TotalCost>125.00</TotalCost>
+            </OrderLine>
+          </OrderLines>
+        </Order>
+        <Order OrderNo="K35149">
+          <TotalLines>1</TotalLines>
+          <OrderLines>
+            <OrderLine OrderLineNo="1">
+              <ProductCode>FG002458</ProductCode>
+              <Quantity>10</Quantity>
+              <TotalCost>115.00</TotalCost>
+            </OrderLine>
+          </OrderLines>
+        </Order>
+      </Orders>
+    </Invoice>
+    <Invoice InvoiceNo="5">
+      <TotalValue>625.80</TotalValue>
+      <Orders>
+        <Order OrderNo="K32154">
+          <TotalLines>1</TotalLines>
+          <OrderLines>
+            <OrderLine OrderLineNo="1">
+              <ProductCode>FG003058</ProductCode>
+              <Quantity>28</Quantity>
+              <TotalCost>625.80</TotalCost>
+            </OrderLine>
+          </OrderLines>
+        </Order>
+      </Orders>
+    </Invoice>
+    <Invoice InvoiceNo="2">
+      <TotalValue>1926.00</TotalValue>
+      <Orders>
+        <Order OrderNo="K32155">
+          <TotalLines>1</TotalLines>
+          <OrderLines>
+            <OrderLine OrderLineNo="1">
+              <ProductCode>FG002215</ProductCode>
+              <Quantity>180</Quantity>
+              <TotalCost>1926.00</TotalCost>
+            </OrderLine>
+          </OrderLines>
+        </Order>
+      </Orders>
+    </Invoice>
+    <Invoice InvoiceNo="3">
+      <TotalValue>3002.00</TotalValue>
+      <Orders>
+        <Order OrderNo="K32158">
+          <TotalLines>2</TotalLines>
+          <OrderLines>
+            <OrderLine OrderLineNo="1">
+              <ProductCode>FG001008</ProductCode>
+              <Quantity>100</Quantity>
+              <TotalCost>1300.00</TotalCost>
+            </OrderLine>
+            <OrderLine OrderLineNo="2">
+              <ProductCode>FG001009</ProductCode>
+              <Quantity>115</Quantity>
+              <TotalCost>1702.00</TotalCost>
+            </OrderLine>
+          </OrderLines>
+        </Order>
+      </Orders>
+    </Invoice>
+    <Invoice InvoiceNo="4">
+      <TotalValue>1225.50</TotalValue>
+      <Orders>
+        <Order OrderNo="K32160">
+          <TotalLines>1</TotalLines>
+          <OrderLines>
+            <OrderLine OrderLineNo="1">
+              <ProductCode>FG001254</ProductCode>
+              <Quantity>95</Quantity>
+              <TotalCost>1225.50</TotalCost>
+            </OrderLine>
+          </OrderLines>
+        </Order>
+      </Orders>
+    </Invoice>
+  </Invoices>
+  <Customers>
+    <CustomerInfo CustomerName="Snack Stores Ltd">
+      <InvoiceNo>1</InvoiceNo>
+      <Address1>38 Barnard Road</Address1>
+      <Address2></Address2>
+      <City>Norwich</City>
+      <Postcode>NR59JP</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="Super ¢ Shop">
+      <InvoiceNo>5</InvoiceNo>
+      <Address1>2 Ottergemsesteenweg</Address1>
+      <Address2></Address2>
+      <City>Gent</City>
+      <Postcode>9000</Postcode>
+      <Country>Belgium</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="Tuck Stop">
+      <InvoiceNo>2</InvoiceNo>
+      <Address1>1 Bury Rd</Address1>
+      <Address2>Stowmarket</Address2>
+      <City>Stowmarket</City>
+      <Postcode>IP141JF</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="Food Warehouse">
+      <InvoiceNo>3</InvoiceNo>
+      <Address1>21 Launceston Retail Park</Address1>
+      <Address2>Hurdon</Address2>
+      <City>Launceston</City>
+      <Postcode>PL15 9DJ</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+    <CustomerInfo CustomerName="The Olde Pub">
+      <InvoiceNo>4</InvoiceNo>
+      <Address1>12 Saxondrive</Address1>
+      <Address2></Address2>
+      <City>Tamworth</City>
+      <Postcode> B79 7HY</Postcode>
+      <Country>UK</Country>
+    </CustomerInfo>
+  </Customers>
+  <Products>
+    <ProductInfo ProductCode="FG002580">
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>12.50</Unitcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG003058">
+      <UnitofMeasurement>KG</UnitofMeasurement>
+      <Unitcost>22.35</Unitcost>
+      <currency>EUR</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG002458">
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>11.50</Unitcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG002215">
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>10.70</Unitcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG001008">
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>13.00</Unitcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG001009">
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>14.80</Unitcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+    <ProductInfo ProductCode="FG001254">
+      <UnitofMeasurement>Each</UnitofMeasurement>
+      <Unitcost>12.90</Unitcost>
+      <currency>GBP</currency>
+    </ProductInfo>
+  </Products>
+</root>

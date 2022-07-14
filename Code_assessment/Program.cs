@@ -29,13 +29,19 @@ var fileInfo = new FileInfo(filePath);
 try
 {
     if (fileInfo.Exists && fileInfo.Extension==".csv")                                        
-    {                                                                                         
+    {                  
+        
         XmlGenerator generator = new XmlGenerator();                                         
-        var csv_dt = generator.CsvToDataTable(@fileInfo.FullName);                            
-        var xml = generator.ConvertCsvToXml(csv_dt);                                          
+        var csv_dt = generator.CsvToDataTable(@fileInfo.FullName);
 
-        System.IO.File.WriteAllText(@fileInfo.FullName.Replace(".csv", ".xml"),               
-                                    xml.ToString());
+        var xml = generator.ConvertCsvToXml(csv_dt);
+        System.IO.File.WriteAllText(@fileInfo.FullName.Replace(".csv", ".xml"),
+                                   xml.ToString());
+
+        XmlCreator creator = new XmlCreator();
+        var xmlNew = creator.ConvertCsvToXml(csv_dt);
+        System.IO.File.WriteAllText(@fileInfo.FullName.Replace(".csv", "New.xml"),
+                                    xmlNew.ToString());
 
         Console.WriteLine("Successfully Converted \nPress any key to close");
         Console.ReadKey();
