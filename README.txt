@@ -51,11 +51,12 @@ Observations:
 
 	1. There is a direct relationship between invoice No's and customer info. That is, an invoice number is generated for every customer which is unique.
 
-	2. The order lines represent the number of items in a particular order.
+	2. The order lines represent the number of items in a particular order within an Invoice.
 
 	3. The ProductCode is unique and unit of measurement, unit cost, currency depends on the ProductCode.
 
-	4. The total cost is the resultant product of the unit cost and quantity. (totalCost = UnitCost * Quantity). So there is a hidden relationship between ProductCode and TotalCost.
+	4. The total cost is the resultant product of the unit cost and quantity. (totalCost = UnitCost * Quantity).
+
 
 
 Assumptions:
@@ -85,3 +86,32 @@ Challenges:
 - In future, if another CSV file is added to the same directory that does not have same column names, the solution will create dynamic XML tags without any relationship between the 
 
   columns. 
+
+
+
+New Assumptions for better solution.
+
+	1. Within each 'Invoice' node I populated multiple nodes that has relationship with the invoice column. They are
+
+				-> Orders Node : This contains individual order nodes and the total Order Lines node for that order.
+	
+				-> OrderLines Node: This node list the order information (incl. product code, quantity, total cost) for a particular orderline within the respective tags.
+							  
+		for example: If a invoice has 2 orders, then there are 2 order lines, and each order line has a product and associated quantity,total cost for that product.
+
+	2. Next is the customers node, that has customer info node. Within the customer info node,
+
+	   I displayed the InvoiceNo's and customer's Address within the respective tags.
+
+	3. The last node is the Products. This has the Product Info node. The Product info node
+
+	   contains the product information within the respective tags.
+
+
+Output:
+
+	1. The directory contains two XML files derived from 2 different logics. The Candidate_Test_Sample.XML is the outcome of previous logic submitted on 12-07-2022.
+
+	2. The Candidate_Test_SampleNew.XML is the outcome of modified logic submitted on 14-07-2022.
+
+	3. Any runtime error from any class will be logged in a common log file with a stacktrace message.
