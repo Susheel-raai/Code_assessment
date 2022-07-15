@@ -92,82 +92,82 @@
     </Invoice>
   </Invoices>
   <Customers>
-    <CustomerInfo CustomerName="Snack Stores Ltd">
+    <Customer CustomerName="Snack Stores Ltd">
       <InvoiceNo>1</InvoiceNo>
       <Address1>38 Barnard Road</Address1>
       <Address2></Address2>
       <City>Norwich</City>
       <Postcode>NR59JP</Postcode>
       <Country>UK</Country>
-    </CustomerInfo>
-    <CustomerInfo CustomerName="Super ¢ Shop">
+    </Customer>
+    <Customer CustomerName="Super ¢ Shop">
       <InvoiceNo>5</InvoiceNo>
       <Address1>2 Ottergemsesteenweg</Address1>
       <Address2></Address2>
       <City>Gent</City>
       <Postcode>9000</Postcode>
       <Country>Belgium</Country>
-    </CustomerInfo>
-    <CustomerInfo CustomerName="Tuck Stop">
+    </Customer>
+    <Customer CustomerName="Tuck Stop">
       <InvoiceNo>2</InvoiceNo>
       <Address1>1 Bury Rd</Address1>
       <Address2>Stowmarket</Address2>
       <City>Stowmarket</City>
       <Postcode>IP141JF</Postcode>
       <Country>UK</Country>
-    </CustomerInfo>
-    <CustomerInfo CustomerName="Food Warehouse">
+    </Customer>
+    <Customer CustomerName="Food Warehouse">
       <InvoiceNo>3</InvoiceNo>
       <Address1>21 Launceston Retail Park</Address1>
       <Address2>Hurdon</Address2>
       <City>Launceston</City>
       <Postcode>PL15 9DJ</Postcode>
       <Country>UK</Country>
-    </CustomerInfo>
-    <CustomerInfo CustomerName="The Olde Pub">
+    </Customer>
+    <Customer CustomerName="The Olde Pub">
       <InvoiceNo>4</InvoiceNo>
       <Address1>12 Saxondrive</Address1>
       <Address2></Address2>
       <City>Tamworth</City>
       <Postcode> B79 7HY</Postcode>
       <Country>UK</Country>
-    </CustomerInfo>
+    </Customer>
   </Customers>
   <Products>
-    <ProductInfo ProductCode="FG002580">
+    <Product ProductCode="FG002580">
       <UnitofMeasurement>Each</UnitofMeasurement>
-      <Unitcost>12.50</Unitcost>
-      <currency>GBP</currency>
-    </ProductInfo>
-    <ProductInfo ProductCode="FG003058">
+      <UnitCost>12.50</UnitCost>
+      <Currency>GBP</Currency>
+    </Product>
+    <Product ProductCode="FG003058">
       <UnitofMeasurement>KG</UnitofMeasurement>
-      <Unitcost>22.35</Unitcost>
-      <currency>EUR</currency>
-    </ProductInfo>
-    <ProductInfo ProductCode="FG002458">
+      <UnitCost>22.35</UnitCost>
+      <Currency>EUR</Currency>
+    </Product>
+    <Product ProductCode="FG002458">
       <UnitofMeasurement>Each</UnitofMeasurement>
-      <Unitcost>11.50</Unitcost>
-      <currency>GBP</currency>
-    </ProductInfo>
-    <ProductInfo ProductCode="FG002215">
+      <UnitCost>11.50</UnitCost>
+      <Currency>GBP</Currency>
+    </Product>
+    <Product ProductCode="FG002215">
       <UnitofMeasurement>Each</UnitofMeasurement>
-      <Unitcost>10.70</Unitcost>
-      <currency>GBP</currency>
-    </ProductInfo>
-    <ProductInfo ProductCode="FG001008">
+      <UnitCost>10.70</UnitCost>
+      <Currency>GBP</Currency>
+    </Product>
+    <Product ProductCode="FG001008">
       <UnitofMeasurement>Each</UnitofMeasurement>
-      <Unitcost>13.00</Unitcost>
-      <currency>GBP</currency>
-    </ProductInfo>
-    <ProductInfo ProductCode="FG001009">
+      <UnitCost>13.00</UnitCost>
+      <Currency>GBP</Currency>
+    </Product>
+    <Product ProductCode="FG001009">
       <UnitofMeasurement>Each</UnitofMeasurement>
-      <Unitcost>14.80</Unitcost>
-      <currency>GBP</currency>
-    </ProductInfo>
-    <ProductInfo ProductCode="FG001254">
+      <UnitCost>14.80</UnitCost>
+      <Currency>GBP</Currency>
+    </Product>
+    <Product ProductCode="FG001254">
       <UnitofMeasurement>Each</UnitofMeasurement>
-      <Unitcost>12.90</Unitcost>
-      <currency>GBP</currency>
-    </ProductInfo>
+      <UnitCost>12.90</UnitCost>
+      <Currency>GBP</Currency>
+    </Product>
   </Products>
 </root>

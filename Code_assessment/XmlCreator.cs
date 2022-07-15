@@ -113,7 +113,7 @@ namespace Code_assessment
                         XElement customersInfo = new XElement("Customers",
                           from DataRow row in customerInfoData.Rows
                           let rowData = row
-                          select new XElement("CustomerInfo",
+                          select new XElement("Customer",
                                   new XAttribute("CustomerName", rowData[0]),
                                   new XElement("InvoiceNo", Convert.ToInt32(rowData[1])),
                                   new XElement("Address1", rowData[2]),
@@ -140,11 +140,11 @@ namespace Code_assessment
                         XElement productInfo = new XElement("Products",
                           from DataRow row in productInfoData.Rows
                           let rowData = row
-                          select new XElement("ProductInfo",
+                          select new XElement("Product",
                                   new XAttribute("ProductCode", rowData[0]),
                                   new XElement("UnitofMeasurement", rowData[1] == string.Empty ? "Each" : rowData[1]),
-                                  new XElement("Unitcost", rowData[2]),
-                                  new XElement("currency", rowData[3] == string.Empty ? "GBP" : rowData[3])
+                                  new XElement("UnitCost", rowData[2]),
+                                  new XElement("Currency", rowData[3] == string.Empty ? "GBP" : rowData[3])
                                   )
                           );
                         customerXml.Add(productInfo);
@@ -155,8 +155,7 @@ namespace Code_assessment
                         XElement parentNode = new XElement(XmlGenerator.ReplaceWord(header.Replace(" ", "")));
                         foreach (var itemValue in ColumnData)
                         {
-                            parentNode.Add(new XElement(header.Replace(" ", ""), header == "Unit of Measurement" && itemValue == string.Empty ? "Each" :
-                                                            header == "currency" && itemValue == string.Empty ? "GBP" : itemValue));
+                            parentNode.Add(new XElement(header.Replace(" ", ""), itemValue));
                         }
                         customerXml.Add(parentNode);
                         break;
